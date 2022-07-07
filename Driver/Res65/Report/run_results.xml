@@ -1,0 +1,518 @@
+<?xml version="1.0"?>
+<Results version="1.0">
+<ReportNode type="testrun">
+<ReportNode type="Action">
+<ReportNode type="Step">
+<Data>
+    <Name>SystemUtil.Run "Chrome.exe",1</Name>
+    <StartTime>2022-07-05 15:21:55</StartTime>
+    <Result>Done</Result>
+    <Extension>
+      <IconKey>ae4b95e373ae4d048a3dfa32a0daf424</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <DeviceInfo />
+  </Data>
+</ReportNode>
+<ReportNode type="Context">
+<ReportNode type="Context">
+<ReportNode type="Step">
+<Data>
+    <Name>Search for restaurant,.Set</Name>
+    <Description>"beautiful rooftop restaurant"</Description>
+    <StartTime>2022-07-05 15:22:01</StartTime>
+    <Result>Done</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>Browser</Type>
+            <Name><![CDATA[Zomato]]></Name>
+          </Object>
+          <Object>
+            <Type>Page</Type>
+            <Name><![CDATA[Zomato]]></Name>
+          </Object>
+          <Object>
+            <Type>WebEdit</Type>
+            <Name><![CDATA[Search for restaurant,]]></Name>
+          </Object>
+        </Path>
+        <Operation>Set</Operation>
+        <OperationData><![CDATA["beautiful rooftop restaurant"]]></OperationData>
+        <Properties>
+          <Property>
+            <Name><![CDATA[type]]></Name>
+            <Value><![CDATA[text]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[placeholder]]></Name>
+            <Value><![CDATA[Search for restaurant, cuisine or a dish]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[name]]></Name>
+            <Value><![CDATA[WebEdit]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[html tag]]></Name>
+            <Value><![CDATA[INPUT]]></Value>
+          </Property>
+        </Properties>
+      </TestObject>
+      <IconKey>408ec754575f4d74ab4b8411b04cdb8f</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <DeviceInfo />
+  </Data>
+</ReportNode>
+<ReportNode type="Step">
+<Data>
+    <Name>Beautiful Rooftop Restaurants.Click</Name>
+    <Description />
+    <StartTime>2022-07-05 15:22:04</StartTime>
+    <Result>Done</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>Browser</Type>
+            <Name><![CDATA[Zomato]]></Name>
+          </Object>
+          <Object>
+            <Type>Page</Type>
+            <Name><![CDATA[Zomato]]></Name>
+          </Object>
+          <Object>
+            <Type>WebElement</Type>
+            <Name><![CDATA[Beautiful Rooftop Restaurants]]></Name>
+          </Object>
+        </Path>
+        <Operation>Click</Operation>
+        <Properties>
+          <Property>
+            <Name><![CDATA[innertext]]></Name>
+            <Value><![CDATA[Beautiful Rooftop Restaurants]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[html tag]]></Name>
+            <Value><![CDATA[P]]></Value>
+          </Property>
+        </Properties>
+      </TestObject>
+      <IconKey>ce5242844a834952900669e34e8ac0f6</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <DeviceInfo />
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Zomato</Name>
+    <Description>Page</Description>
+    <StartTime>2022-07-05 15:22:01</StartTime>
+    <Duration>7</Duration>
+    <Result>Done</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>Browser</Type>
+            <Name><![CDATA[Zomato]]></Name>
+          </Object>
+          <Object>
+            <Type>Page</Type>
+            <Name><![CDATA[Zomato]]></Name>
+          </Object>
+        </Path>
+        <OperationData><![CDATA[Page]]></OperationData>
+      </TestObject>
+      <IconKey>8204df8335bc4152ac9612ca34c716f1</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="Context">
+<ReportNode type="Context">
+<ReportNode type="Checkpoint">
+<Data>
+    <Name>"19 Places"</Name>
+    <Description> </Description>
+    <StartTime>2022-07-05 15:22:08</StartTime>
+    <Result>Passed</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>Browser</Type>
+            <Name><![CDATA[Zomato]]></Name>
+          </Object>
+          <Object>
+            <Type>Page</Type>
+            <Name><![CDATA[Beautiful Rooftop Restaurants]]></Name>
+          </Object>
+          <Object>
+            <Type>WebElement</Type>
+            <Name><![CDATA[19 Places]]></Name>
+          </Object>
+        </Path>
+        <OperationData><![CDATA[ ]]></OperationData>
+        <Properties>
+          <Property>
+            <Name><![CDATA[innertext]]></Name>
+            <Value><![CDATA[19 Places]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[html tag]]></Name>
+            <Value><![CDATA[P]]></Value>
+          </Property>
+        </Properties>
+      </TestObject>
+      <Checkpoint>
+        <Type>Standard Checkpoint</Type>
+        <Properties>
+          <Property>
+            <StdChkPointPropertyName><![CDATA[html tag]]></StdChkPointPropertyName>
+            <StdChkPointPropertyActualValue><![CDATA[P]]></StdChkPointPropertyActualValue>
+            <StdChkPointPropertyExpectedValue><![CDATA[P]]></StdChkPointPropertyExpectedValue>
+          </Property>
+          <Property>
+            <StdChkPointPropertyName><![CDATA[innertext]]></StdChkPointPropertyName>
+            <StdChkPointPropertyActualValue><![CDATA[19 Places]]></StdChkPointPropertyActualValue>
+            <StdChkPointPropertyExpectedValue><![CDATA[19 Places]]></StdChkPointPropertyExpectedValue>
+          </Property>
+        </Properties>
+        <ShortDescription>Checkpoint passed.</ShortDescription>
+      </Checkpoint>
+      <IconKey>ce5242844a834952900669e34e8ac0f6</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <DeviceInfo />
+  </Data>
+</ReportNode>
+<Data>
+    <Name>19 Places</Name>
+    <Description>WebElement</Description>
+    <StartTime>2022-07-05 15:22:08</StartTime>
+    <Duration>26</Duration>
+    <Result>Passed</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>Browser</Type>
+            <Name><![CDATA[Zomato]]></Name>
+          </Object>
+          <Object>
+            <Type>Page</Type>
+            <Name><![CDATA[Beautiful Rooftop Restaurants]]></Name>
+          </Object>
+          <Object>
+            <Type>WebElement</Type>
+            <Name><![CDATA[19 Places]]></Name>
+          </Object>
+        </Path>
+        <OperationData><![CDATA[WebElement]]></OperationData>
+        <Properties>
+          <Property>
+            <Name><![CDATA[innertext]]></Name>
+            <Value><![CDATA[19 Places]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[html tag]]></Name>
+            <Value><![CDATA[P]]></Value>
+          </Property>
+        </Properties>
+      </TestObject>
+      <IconKey>ce5242844a834952900669e34e8ac0f6</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="Step">
+<Data>
+    <Name>"location-filldown-trianglecurr"- Description mismatch</Name>
+    <Description>The object was not found using the test object description. Check the object's properties.</Description>
+    <StartTime>2022-07-05 15:22:34</StartTime>
+    <Result>Warning</Result>
+    <Extension>
+      <SmartIdentificationInfo>
+        <SIDBasicProperties>
+          <Property>
+            <Name><![CDATA[micclass]]></Name>
+            <Value><![CDATA[WebElement]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[html tag]]></Name>
+            <Value><![CDATA[DIV]]></Value>
+          </Property>
+          <BasicMatch>763</BasicMatch>
+        </SIDBasicProperties>
+        <SIDOptionalProperties>
+          <Property>
+            <Name><![CDATA[html id]]></Name>
+            <Value><![CDATA[]]></Value>
+            <Info><![CDATA[Used]]></Info>
+            <Matches>736</Matches>
+          </Property>
+          <Property>
+            <Name><![CDATA[class]]></Name>
+            <Value><![CDATA[sc-laTMn gITREa]]></Value>
+            <Info><![CDATA[Used]]></Info>
+            <Matches>1</Matches>
+          </Property>
+          <Property>
+            <Name><![CDATA[innertext]]></Name>
+            <Value><![CDATA[location-filldown-trianglecurrent-locationDetect current locationUsing GPSplusAdd addressRecent LocationstimeGurudwara Colony, Nigdi, Pimpri-ChinchwadtimeSudhama Nagar, BengaluruSearchVedikachevron-downProfileNotificationsBookmarksReviewsNetworkFind friendsSettingsLog outNavigationHome/Pune/Collections/Beautiful Rooftop Restaurants/Beautiful Rooftop RestaurantsGood vibes and even better views19 PlacesplusSave CollectionlinkcrownFeaturedTTF - The Tenth Floor4.2star-fillDINING-star-fillDELIVERYFinger Food, Chinese, Pizza, Italian, North Indian, DessertsBaner, PunecrownFeaturedSKYE - Rooftop by Eternia4.3star-fillDINING-star-fillDELIVERYAmerican, Chinese, North Indian, Italian, Mughlai, Oriental, Continental, DessertsSenapati Bapat Road, PunecrownFeaturedFML - Food Music Love4.3star-fillDINING3.3star-fillDELIVERYNorth Indian, Chinese, Fast Food, SichuanKalyani Nagar, PunePaasha - JW Marriott Pune4.8star-fillDINING4.3star-fillDELIVERYNorth Indian, Kebab, DessertsJW Marriott Pune, Senapati Bapat Road, PuneMarine Drive3.9star-fillDINING3.6star-fillDELIVERYContinental, AsianHinjawadi, PuneChar Bar Lounge and Restaurant LLP4.0star-fillDINING4.0star-fillDELIVERYFinger Food, North Indian, Chinese, ContinentalWakad, PuneTexas Tower4.2star-fillDINING4.1star-fillDELIVERYContinental, North Indian, Italian, Finger Food, Desserts, BeveragesKharadi, PuneSpice Factory4.1star-fillDINING3.9star-fillDELIVERYNorth Indian, ChineseWhite Square, Hinjawadi, PuneIce N Fire Sky Lounge4.3star-fillDINING4.0star-fillDELIVERYFinger Food, Continental, North IndianBaner, PuneBacharika- Rooftop Bar And Kitchen4.5star-fillDINING4.2star-fillDELIVERYChinese, North Indian, Continental, Middle Eastern, European, SichuanKothrud, PuneBeto's4.0star-fillDINING3.5star-fillDELIVERYNorth Indian, Continental, Italian, Chinese, Seafood, SichuanNIBM Road, PuneEvviva Sky Lounge - Crowne Plaza Pune City Centre4.2star-fillDINING-star-fillDELIVERYAsian, Mughlai, ContinentalCrowne Plaza Pune City Centre, Bund Garden Road, PuneAtmosphere 64.1star-fillDINING3.8star-fillDELIVERYNorth Indian, Continental, ChineseSky Max Mall, Viman Nagar, PuneThe Mafia4.1star-fillDINING-star-fillDELIVERYNorth Indian, Continental, ChineseViman Nagar, PuneTalli4.2star-fillDINING4.0star-fillDELIVERYNorth Indian, Fast Food, Pizza, Pasta, Chinese, SichuanBaner, PunePenthouze4.0star-fillDINING-star-fillDELIVERYContinental, Italian, Finger FoodMundhwa, Pune360 Degree - The Rooftop Restaurant &amp; Bar3.6star-fillDINING-star-fillDELIVERYChinese, Mughlai, Fast Food, North Indian, Beverages, Desserts, SichuanBhosale-Shinde Arcade, JM Road, PuneThe Green Roof4.1star-fillDINING3.9star-fillDELIVERYChinese, North Indian, Italian, SandwichSinhgad Road, PuneExotica4.4star-fillDINING4.2star-fillDELIVERYNorth Indian, Mughlai, Maharashtrian, Chinese, Desserts, Beverages, Oriental, SichuanPanchshil Tech Park, Yerawada, PuneMore CollectionsNewly Opened22 Placesright-triangleTrending This Week30 Placesright-triangleBest of Pune97 Placesright-triangleMost Romantic Restaurants28 Placesright-triangleRooftops30 Placesright-triangleBest Bars &amp; Pubs29 Placesright-triangleWork Friendly Places!30 Placesright-triangleSunday Brunches28 Placesright-triangleVeggie Friendly30 Placesright-triangleBest Pizza Places In Town27 Placesright-triangleSweet Tooth27 Placesright-triangleLegendary Outlets30 Placesright-triangleGreat Breakfasts30 Placesright-trianglePan-Asian Delicacies30 Placesright-triangleSuper Seafood30 Placesright-triangleLive Sports Screenings37 Placesright-triangleKickass Burgers19 Placesright-trianglePocket Friendly29 Placesright-triangleGreat Coffee27 Placesright-triangleTraditional Thali30 Placesright-triangleExplore options near mePopular cuisines near mechevron-downPopular restaurant types near mechevron-downTop Restaurant Chainschevron-downCities We Deliver Tochevron-downSelect CountryIndiaAustraliaBrazilCanadaChileCzech RepublicIndonesiaIrelandItalyLebanonMalaysiaNew ZealandPhilippinesPolandPortugalQatarSingaporeSlovakiaSouth AfricaSri LankaTurkeyUAEUnited KingdomUSAIndiachevron-downSelect Languagelanguage-globeEnglishchevron-downAbout ZomatoWho We AreBlogWork With UsInvestor RelationsReport FraudZomaverseZomatoFeeding IndiaHyperpureZomalandFor RestaurantsPartner With UsApps For YouFor EnterprisesZomato For WorkLearn MorePrivacySecurityTermsSitemapSocial linksBy continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-2022 © Zomato™ Ltd. All rights reserved.]]></Value>
+            <Info><![CDATA[Ignored]]></Info>
+            <Matches>0</Matches>
+          </Property>
+          <Property>
+            <Name><![CDATA[visible]]></Name>
+            <Value><![CDATA[True]]></Value>
+            <Info><![CDATA[Ignored]]></Info>
+            <Matches>0</Matches>
+          </Property>
+          <Property>
+            <Name><![CDATA[acc_name]]></Name>
+            <Value><![CDATA[]]></Value>
+            <Info><![CDATA[Ignored]]></Info>
+            <Matches>0</Matches>
+          </Property>
+        </SIDOptionalProperties>
+      </SmartIdentificationInfo>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>Browser</Type>
+            <Name><![CDATA[Zomato]]></Name>
+          </Object>
+          <Object>
+            <Type>Page</Type>
+            <Name><![CDATA[Beautiful Rooftop Restaurants]]></Name>
+          </Object>
+          <Object>
+            <Type>WebElement</Type>
+            <Name><![CDATA[location-filldown-trianglecurr]]></Name>
+          </Object>
+        </Path>
+        <OperationData><![CDATA[The object was not found using the test object description. Check the object's properties.]]></OperationData>
+        <Properties>
+          <Property>
+            <Name><![CDATA[innertext]]></Name>
+            <Value><![CDATA[location-filldown-trianglecurrent-locationDetect current locationUsing GPSplusAdd addressRecent LocationstimeGurudwara Colony, Nigdi, Pimpri-ChinchwadtimeSudhama Nagar, BengaluruSearchVedikachevron-downProfileNotificationsBookmarksReviewsNetworkFind friendsSettingsLog outNavigationHome/Pune/Collections/Beautiful Rooftop Restaurants/Beautiful Rooftop RestaurantsGood vibes and even better views19 PlacesplusSave CollectionlinkcrownFeaturedTTF - The Tenth Floor4.2star-fillDINING-star-fillDELIVERYFinger Food, Chinese, Pizza, Italian, North Indian, DessertsBaner, PunecrownFeaturedSKYE - Rooftop by Eternia4.3star-fillDINING-star-fillDELIVERYAmerican, Chinese, North Indian, Italian, Mughlai, Oriental, Continental, DessertsSenapati Bapat Road, PunecrownFeaturedFML - Food Music Love4.3star-fillDINING3.3star-fillDELIVERYNorth Indian, Chinese, Fast Food, SichuanKalyani Nagar, PunePaasha - JW Marriott Pune4.8star-fillDINING4.3star-fillDELIVERYNorth Indian, Kebab, DessertsJW Marriott Pune, Senapati Bapat Road, PuneMarine Drive3.9star-fillDINING3.6star-fillDELIVERYContinental, AsianHinjawadi, PuneChar Bar Lounge and Restaurant LLP4.0star-fillDINING4.0star-fillDELIVERYFinger Food, North Indian, Chinese, ContinentalWakad, PuneTexas Tower4.2star-fillDINING4.1star-fillDELIVERYContinental, North Indian, Italian, Finger Food, Desserts, BeveragesKharadi, PuneSpice Factory4.1star-fillDINING3.9star-fillDELIVERYNorth Indian, ChineseWhite Square, Hinjawadi, PuneIce N Fire Sky Lounge4.3star-fillDINING4.0star-fillDELIVERYFinger Food, Continental, North IndianBaner, PuneBacharika- Rooftop Bar And Kitchen4.5star-fillDINING4.2star-fillDELIVERYChinese, North Indian, Continental, Middle Eastern, European, SichuanKothrud, PuneBeto's4.0star-fillDINING3.5star-fillDELIVERYNorth Indian, Continental, Italian, Chinese, Seafood, SichuanNIBM Road, PuneEvviva Sky Lounge - Crowne Plaza Pune City Centre4.2star-fillDINING-star-fillDELIVERYAsian, Mughlai, ContinentalCrowne Plaza Pune City Centre, Bund Garden Road, PuneAtmosphere 64.1star-fillDINING3.8star-fillDELIVERYNorth Indian, Continental, ChineseSky Max Mall, Viman Nagar, PuneThe Mafia4.1star-fillDINING-star-fillDELIVERYNorth Indian, Continental, ChineseViman Nagar, PuneTalli4.2star-fillDINING4.0star-fillDELIVERYNorth Indian, Fast Food, Pizza, Pasta, Chinese, SichuanBaner, PunePenthouze4.0star-fillDINING-star-fillDELIVERYContinental, Italian, Finger FoodMundhwa, Pune360 Degree - The Rooftop Restaurant &amp; Bar3.6star-fillDINING-star-fillDELIVERYChinese, Mughlai, Fast Food, North Indian, Beverages, Desserts, SichuanBhosale-Shinde Arcade, JM Road, PuneThe Green Roof4.1star-fillDINING3.9star-fillDELIVERYChinese, North Indian, Italian, SandwichSinhgad Road, PuneExotica4.4star-fillDINING4.2star-fillDELIVERYNorth Indian, Mughlai, Maharashtrian, Chinese, Desserts, Beverages, Oriental, SichuanPanchshil Tech Park, Yerawada, PuneMore CollectionsNewly Opened22 Placesright-triangleTrending This Week30 Placesright-triangleBest of Pune97 Placesright-triangleMost Romantic Restaurants28 Placesright-triangleRooftops30 Placesright-triangleBest Bars &amp; Pubs29 Placesright-triangleWork Friendly Places!30 Placesright-triangleSunday Brunches28 Placesright-triangleVeggie Friendly30 Placesright-triangleBest Pizza Places In Town27 Placesright-triangleSweet Tooth27 Placesright-triangleLegendary Outlets30 Placesright-triangleGreat Breakfasts30 Placesright-trianglePan-Asian Delicacies30 Placesright-triangleSuper Seafood30 Placesright-triangleLive Sports Screenings37 Placesright-triangleKickass Burgers19 Placesright-trianglePocket Friendly29 Placesright-triangleGreat Coffee27 Placesright-triangleTraditional Thali30 Placesright-triangleExplore options near mePopular cuisines near mechevron-downPopular restaurant types near mechevron-downTop Restaurant Chainschevron-downCities We Deliver Tochevron-downSelect CountryIndiaAustraliaBrazilCanadaChileCzech RepublicIndonesiaIrelandItalyLebanonMalaysiaNew ZealandPhilippinesPolandPortugalQatarSingaporeSlovakiaSouth AfricaSri LankaTurkeyUAEUnited KingdomUSAIndiachevron-downSelect Languagelanguage-globeEnglishchevron-downAbout ZomatoWho We AreBlogWork With UsInvestor RelationsReport FraudZomaverseZomatoFeeding IndiaHyperpureZomalandFor RestaurantsPartner With UsApps For YouFor EnterprisesZomato For WorkLearn MorePrivacySecurityTermsSitemapSocial linksBy continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-2022 © Zomato™ Ltd. All rights reserved.]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[html tag]]></Name>
+            <Value><![CDATA[DIV]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[class]]></Name>
+            <Value><![CDATA[sc-laTMn gITREa]]></Value>
+          </Property>
+        </Properties>
+      </TestObject>
+      <IconKey>ce5242844a834952900669e34e8ac0f6</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <DeviceInfo />
+  </Data>
+</ReportNode>
+<ReportNode type="Step">
+<Data>
+    <Name>"location-filldown-trianglecurr"- Smart Identification</Name>
+    <Description>&lt;P&gt;&lt;span class="text"&gt;The smart identification mechanism was invoked.&lt;/span&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN class=text&gt;Reason: object not found.&lt;/SPAN&gt;&lt;/P&gt;           &lt;SPAN class=text&gt;&lt;b&gt;Original description:&lt;/b&gt;&lt;/SPAN&gt;&lt;br&gt;micclass=WebElement&lt;br&gt;innertext=location-filldown-trianglecurrent-locationDetect current locationUsing GPSplusAdd addressRecent LocationstimeGurudwara Colony, Nigdi, Pimpri-ChinchwadtimeSudhama Nagar, BengaluruSearchVedikachevron-downProfileNotificationsBookmarksReviewsNetworkFind friendsSettingsLog outNavigationHome/Pune/Collections/Beautiful Rooftop Restaurants/Beautiful Rooftop RestaurantsGood vibes and even better views19 PlacesplusSave CollectionlinkcrownFeaturedTTF - The Tenth Floor4.2star-fillDINING-star-fillDELIVERYFinger Food, Chinese, Pizza, Italian, North Indian, DessertsBaner, PunecrownFeaturedSKYE - Rooftop by Eternia4.3star-fillDINING-star-fillDELIVERYAmerican, Chinese, North Indian, Italian, Mughlai, Oriental, Continental, DessertsSenapati Bapat Road, PunecrownFeaturedFML - Food Music Love4.3star-fillDINING3.3star-fillDELIVERYNorth Indian, Chinese, Fast Food, SichuanKalyani Nagar, PunePaasha - JW Marriott Pune4.8star-fillDINING4.3star-fillDELIVERYNorth Indian, Kebab, DessertsJW Marriott Pune, Senapati Bapat Road, PuneMarine Drive3.9star-fillDINING3.6star-fillDELIVERYContinental, AsianHinjawadi, PuneChar Bar Lounge and Restaurant LLP4.0star-fillDINING4.0star-fillDELIVERYFinger Food, North Indian, Chinese, ContinentalWakad, PuneTexas Tower4.2star-fillDINING4.1star-fillDELIVERYContinental, North Indian, Italian, Finger Food, Desserts, BeveragesKharadi, PuneSpice Factory4.1star-fillDINING3.9star-fillDELIVERYNorth Indian, ChineseWhite Square, Hinjawadi, PuneIce N Fire Sky Lounge4.3star-fillDINING4.0star-fillDELIVERYFinger Food, Continental, North IndianBaner, PuneBacharika- Rooftop Bar And Kitchen4.5star-fillDINING4.2star-fillDELIVERYChinese, North Indian, Continental, Middle Eastern, European, SichuanKothrud, PuneBeto's4.0star-fillDINING3.5star-fillDELIVERYNorth Indian, Continental, Italian, Chinese, Seafood, SichuanNIBM Road, PuneEvviva Sky Lounge - Crowne Plaza Pune City Centre4.2star-fillDINING-star-fillDELIVERYAsian, Mughlai, ContinentalCrowne Plaza Pune City Centre, Bund Garden Road, PuneAtmosphere 64.1star-fillDINING3.8star-fillDELIVERYNorth Indian, Continental, ChineseSky Max Mall, Viman Nagar, PuneThe Mafia4.1star-fillDINING-star-fillDELIVERYNorth Indian, Continental, ChineseViman Nagar, PuneTalli4.2star-fillDINING4.0star-fillDELIVERYNorth Indian, Fast Food, Pizza, Pasta, Chinese, SichuanBaner, PunePenthouze4.0star-fillDINING-star-fillDELIVERYContinental, Italian, Finger FoodMundhwa, Pune360 Degree - The Rooftop Restaurant &amp; Bar3.6star-fillDINING-star-fillDELIVERYChinese, Mughlai, Fast Food, North Indian, Beverages, Desserts, SichuanBhosale-Shinde Arcade, JM Road, PuneThe Green Roof4.1star-fillDINING3.9star-fillDELIVERYChinese, North Indian, Italian, SandwichSinhgad Road, PuneExotica4.4star-fillDINING4.2star-fillDELIVERYNorth Indian, Mughlai, Maharashtrian, Chinese, Desserts, Beverages, Oriental, SichuanPanchshil Tech Park, Yerawada, PuneMore CollectionsNewly Opened22 Placesright-triangleTrending This Week30 Placesright-triangleBest of Pune97 Placesright-triangleMost Romantic Restaurants28 Placesright-triangleRooftops30 Placesright-triangleBest Bars &amp; Pubs29 Placesright-triangleWork Friendly Places!30 Placesright-triangleSunday Brunches28 Placesright-triangleVeggie Friendly30 Placesright-triangleBest Pizza Places In Town27 Placesright-triangleSweet Tooth27 Placesright-triangleLegendary Outlets30 Placesright-triangleGreat Breakfasts30 Placesright-trianglePan-Asian Delicacies30 Placesright-triangleSuper Seafood30 Placesright-triangleLive Sports Screenings37 Placesright-triangleKickass Burgers19 Placesright-trianglePocket Friendly29 Placesright-triangleGreat Coffee27 Placesright-triangleTraditional Thali30 Placesright-triangleExplore options near mePopular cuisines near mechevron-downPopular restaurant types near mechevron-downTop Restaurant Chainschevron-downCities We Deliver Tochevron-downSelect CountryIndiaAustraliaBrazilCanadaChileCzech RepublicIndonesiaIrelandItalyLebanonMalaysiaNew ZealandPhilippinesPolandPortugalQatarSingaporeSlovakiaSouth AfricaSri LankaTurkeyUAEUnited KingdomUSAIndiachevron-downSelect Languagelanguage-globeEnglishchevron-downAbout ZomatoWho We AreBlogWork With UsInvestor RelationsReport FraudZomaverseZomatoFeeding IndiaHyperpureZomalandFor RestaurantsPartner With UsApps For YouFor EnterprisesZomato For WorkLearn MorePrivacySecurityTermsSitemapSocial linksBy continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-2022 © Zomato™ Ltd. All rights reserved.&lt;br&gt;html tag=DIV&lt;br&gt;class=sc-laTMn gITREa&lt;br&gt;&lt;P&gt;&lt;FONT face=Verdana size=2&gt;&lt;SPAN class=text&gt;&lt;B&gt;Smart Identification Alternative Description: &lt;/B&gt;&lt;/SPAN&gt;&lt;/FONT&gt;&lt;/P&gt;&lt;FONT face=Verdana size=2&gt;&lt;u&gt;Base filter properties (763 objects found)&amp;nbsp;&lt;/FONT&gt;&lt;/u&gt;&lt;br&gt;
+micclass=WebElement&lt;br&gt;html tag=DIV&lt;br&gt;&lt;br&gt;&lt;FONT face=Verdana size=2&gt;&lt;u&gt;Optional filter properties&lt;/FONT&gt;&lt;/u&gt;&lt;br&gt;
+html id=&lt;SPAN class=passed&gt; (Used&lt;/SPAN&gt;, 736 matches)&lt;/SPAN&gt;&lt;br&gt;class=sc-laTMn gITREa&lt;SPAN class=passed&gt; (Used&lt;/SPAN&gt;, 1 matches)&lt;/SPAN&gt;&lt;br&gt;innertext=location-filldown-trianglecurrent-locationDetect current locationUsing GPSplusAdd addressRecent LocationstimeGurudwara Colony, Nigdi, Pimpri-ChinchwadtimeSudhama Nagar, BengaluruSearchVedikachevron-downProfileNotificationsBookmarksReviewsNetworkFind friendsSettingsLog outNavigationHome/Pune/Collections/Beautiful Rooftop Restaurants/Beautiful Rooftop RestaurantsGood vibes and even better views19 PlacesplusSave CollectionlinkcrownFeaturedTTF - The Tenth Floor4.2star-fillDINING-star-fillDELIVERYFinger Food, Chinese, Pizza, Italian, North Indian, DessertsBaner, PunecrownFeaturedSKYE - Rooftop by Eternia4.3star-fillDINING-star-fillDELIVERYAmerican, Chinese, North Indian, Italian, Mughlai, Oriental, Continental, DessertsSenapati Bapat Road, PunecrownFeaturedFML - Food Music Love4.3star-fillDINING3.3star-fillDELIVERYNorth Indian, Chinese, Fast Food, SichuanKalyani Nagar, PunePaasha - JW Marriott Pune4.8star-fillDINING4.3star-fillDELIVERYNorth Indian, Kebab, DessertsJW Marriott Pune, Senapati Bapat Road, PuneMarine Drive3.9star-fillDINING3.6star-fillDELIVERYContinental, AsianHinjawadi, PuneChar Bar Lounge and Restaurant LLP4.0star-fillDINING4.0star-fillDELIVERYFinger Food, North Indian, Chinese, ContinentalWakad, PuneTexas Tower4.2star-fillDINING4.1star-fillDELIVERYContinental, North Indian, Italian, Finger Food, Desserts, BeveragesKharadi, PuneSpice Factory4.1star-fillDINING3.9star-fillDELIVERYNorth Indian, ChineseWhite Square, Hinjawadi, PuneIce N Fire Sky Lounge4.3star-fillDINING4.0star-fillDELIVERYFinger Food, Continental, North IndianBaner, PuneBacharika- Rooftop Bar And Kitchen4.5star-fillDINING4.2star-fillDELIVERYChinese, North Indian, Continental, Middle Eastern, European, SichuanKothrud, PuneBeto's4.0star-fillDINING3.5star-fillDELIVERYNorth Indian, Continental, Italian, Chinese, Seafood, SichuanNIBM Road, PuneEvviva Sky Lounge - Crowne Plaza Pune City Centre4.2star-fillDINING-star-fillDELIVERYAsian, Mughlai, ContinentalCrowne Plaza Pune City Centre, Bund Garden Road, PuneAtmosphere 64.1star-fillDINING3.8star-fillDELIVERYNorth Indian, Continental, ChineseSky Max Mall, Viman Nagar, PuneThe Mafia4.1star-fillDINING-star-fillDELIVERYNorth Indian, Continental, ChineseViman Nagar, PuneTalli4.2star-fillDINING4.0star-fillDELIVERYNorth Indian, Fast Food, Pizza, Pasta, Chinese, SichuanBaner, PunePenthouze4.0star-fillDINING-star-fillDELIVERYContinental, Italian, Finger FoodMundhwa, Pune360 Degree - The Rooftop Restaurant &amp; Bar3.6star-fillDINING-star-fillDELIVERYChinese, Mughlai, Fast Food, North Indian, Beverages, Desserts, SichuanBhosale-Shinde Arcade, JM Road, PuneThe Green Roof4.1star-fillDINING3.9star-fillDELIVERYChinese, North Indian, Italian, SandwichSinhgad Road, PuneExotica4.4star-fillDINING4.2star-fillDELIVERYNorth Indian, Mughlai, Maharashtrian, Chinese, Desserts, Beverages, Oriental, SichuanPanchshil Tech Park, Yerawada, PuneMore CollectionsNewly Opened22 Placesright-triangleTrending This Week30 Placesright-triangleBest of Pune97 Placesright-triangleMost Romantic Restaurants28 Placesright-triangleRooftops30 Placesright-triangleBest Bars &amp; Pubs29 Placesright-triangleWork Friendly Places!30 Placesright-triangleSunday Brunches28 Placesright-triangleVeggie Friendly30 Placesright-triangleBest Pizza Places In Town27 Placesright-triangleSweet Tooth27 Placesright-triangleLegendary Outlets30 Placesright-triangleGreat Breakfasts30 Placesright-trianglePan-Asian Delicacies30 Placesright-triangleSuper Seafood30 Placesright-triangleLive Sports Screenings37 Placesright-triangleKickass Burgers19 Placesright-trianglePocket Friendly29 Placesright-triangleGreat Coffee27 Placesright-triangleTraditional Thali30 Placesright-triangleExplore options near mePopular cuisines near mechevron-downPopular restaurant types near mechevron-downTop Restaurant Chainschevron-downCities We Deliver Tochevron-downSelect CountryIndiaAustraliaBrazilCanadaChileCzech RepublicIndonesiaIrelandItalyLebanonMalaysiaNew ZealandPhilippinesPolandPortugalQatarSingaporeSlovakiaSouth AfricaSri LankaTurkeyUAEUnited KingdomUSAIndiachevron-downSelect Languagelanguage-globeEnglishchevron-downAbout ZomatoWho We AreBlogWork With UsInvestor RelationsReport FraudZomaverseZomatoFeeding IndiaHyperpureZomalandFor RestaurantsPartner With UsApps For YouFor EnterprisesZomato For WorkLearn MorePrivacySecurityTermsSitemapSocial linksBy continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-2022 © Zomato™ Ltd. All rights reserved.&lt;SPAN class=warning&gt; (Ignored)&lt;FONT color=#000000&gt;&lt;/FONT&gt;&lt;/SPAN&gt;&lt;br&gt;visible=-1&lt;SPAN class=warning&gt; (Ignored)&lt;FONT color=#000000&gt;&lt;/FONT&gt;&lt;/SPAN&gt;&lt;br&gt;acc_name=&lt;SPAN class=warning&gt; (Ignored)&lt;FONT color=#000000&gt;&lt;/FONT&gt;&lt;/SPAN&gt;&lt;br&gt;</Description>
+    <StartTime>2022-07-05 15:22:34</StartTime>
+    <Result>Done</Result>
+    <Extension>
+      <SmartIdentificationInfo>
+        <SIDBasicProperties>
+          <Property>
+            <Name><![CDATA[micclass]]></Name>
+            <Value><![CDATA[WebElement]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[html tag]]></Name>
+            <Value><![CDATA[DIV]]></Value>
+          </Property>
+          <BasicMatch>763</BasicMatch>
+        </SIDBasicProperties>
+        <SIDOptionalProperties>
+          <Property>
+            <Name><![CDATA[html id]]></Name>
+            <Value><![CDATA[]]></Value>
+            <Info><![CDATA[Used]]></Info>
+            <Matches>736</Matches>
+          </Property>
+          <Property>
+            <Name><![CDATA[class]]></Name>
+            <Value><![CDATA[sc-laTMn gITREa]]></Value>
+            <Info><![CDATA[Used]]></Info>
+            <Matches>1</Matches>
+          </Property>
+          <Property>
+            <Name><![CDATA[innertext]]></Name>
+            <Value><![CDATA[location-filldown-trianglecurrent-locationDetect current locationUsing GPSplusAdd addressRecent LocationstimeGurudwara Colony, Nigdi, Pimpri-ChinchwadtimeSudhama Nagar, BengaluruSearchVedikachevron-downProfileNotificationsBookmarksReviewsNetworkFind friendsSettingsLog outNavigationHome/Pune/Collections/Beautiful Rooftop Restaurants/Beautiful Rooftop RestaurantsGood vibes and even better views19 PlacesplusSave CollectionlinkcrownFeaturedTTF - The Tenth Floor4.2star-fillDINING-star-fillDELIVERYFinger Food, Chinese, Pizza, Italian, North Indian, DessertsBaner, PunecrownFeaturedSKYE - Rooftop by Eternia4.3star-fillDINING-star-fillDELIVERYAmerican, Chinese, North Indian, Italian, Mughlai, Oriental, Continental, DessertsSenapati Bapat Road, PunecrownFeaturedFML - Food Music Love4.3star-fillDINING3.3star-fillDELIVERYNorth Indian, Chinese, Fast Food, SichuanKalyani Nagar, PunePaasha - JW Marriott Pune4.8star-fillDINING4.3star-fillDELIVERYNorth Indian, Kebab, DessertsJW Marriott Pune, Senapati Bapat Road, PuneMarine Drive3.9star-fillDINING3.6star-fillDELIVERYContinental, AsianHinjawadi, PuneChar Bar Lounge and Restaurant LLP4.0star-fillDINING4.0star-fillDELIVERYFinger Food, North Indian, Chinese, ContinentalWakad, PuneTexas Tower4.2star-fillDINING4.1star-fillDELIVERYContinental, North Indian, Italian, Finger Food, Desserts, BeveragesKharadi, PuneSpice Factory4.1star-fillDINING3.9star-fillDELIVERYNorth Indian, ChineseWhite Square, Hinjawadi, PuneIce N Fire Sky Lounge4.3star-fillDINING4.0star-fillDELIVERYFinger Food, Continental, North IndianBaner, PuneBacharika- Rooftop Bar And Kitchen4.5star-fillDINING4.2star-fillDELIVERYChinese, North Indian, Continental, Middle Eastern, European, SichuanKothrud, PuneBeto's4.0star-fillDINING3.5star-fillDELIVERYNorth Indian, Continental, Italian, Chinese, Seafood, SichuanNIBM Road, PuneEvviva Sky Lounge - Crowne Plaza Pune City Centre4.2star-fillDINING-star-fillDELIVERYAsian, Mughlai, ContinentalCrowne Plaza Pune City Centre, Bund Garden Road, PuneAtmosphere 64.1star-fillDINING3.8star-fillDELIVERYNorth Indian, Continental, ChineseSky Max Mall, Viman Nagar, PuneThe Mafia4.1star-fillDINING-star-fillDELIVERYNorth Indian, Continental, ChineseViman Nagar, PuneTalli4.2star-fillDINING4.0star-fillDELIVERYNorth Indian, Fast Food, Pizza, Pasta, Chinese, SichuanBaner, PunePenthouze4.0star-fillDINING-star-fillDELIVERYContinental, Italian, Finger FoodMundhwa, Pune360 Degree - The Rooftop Restaurant &amp; Bar3.6star-fillDINING-star-fillDELIVERYChinese, Mughlai, Fast Food, North Indian, Beverages, Desserts, SichuanBhosale-Shinde Arcade, JM Road, PuneThe Green Roof4.1star-fillDINING3.9star-fillDELIVERYChinese, North Indian, Italian, SandwichSinhgad Road, PuneExotica4.4star-fillDINING4.2star-fillDELIVERYNorth Indian, Mughlai, Maharashtrian, Chinese, Desserts, Beverages, Oriental, SichuanPanchshil Tech Park, Yerawada, PuneMore CollectionsNewly Opened22 Placesright-triangleTrending This Week30 Placesright-triangleBest of Pune97 Placesright-triangleMost Romantic Restaurants28 Placesright-triangleRooftops30 Placesright-triangleBest Bars &amp; Pubs29 Placesright-triangleWork Friendly Places!30 Placesright-triangleSunday Brunches28 Placesright-triangleVeggie Friendly30 Placesright-triangleBest Pizza Places In Town27 Placesright-triangleSweet Tooth27 Placesright-triangleLegendary Outlets30 Placesright-triangleGreat Breakfasts30 Placesright-trianglePan-Asian Delicacies30 Placesright-triangleSuper Seafood30 Placesright-triangleLive Sports Screenings37 Placesright-triangleKickass Burgers19 Placesright-trianglePocket Friendly29 Placesright-triangleGreat Coffee27 Placesright-triangleTraditional Thali30 Placesright-triangleExplore options near mePopular cuisines near mechevron-downPopular restaurant types near mechevron-downTop Restaurant Chainschevron-downCities We Deliver Tochevron-downSelect CountryIndiaAustraliaBrazilCanadaChileCzech RepublicIndonesiaIrelandItalyLebanonMalaysiaNew ZealandPhilippinesPolandPortugalQatarSingaporeSlovakiaSouth AfricaSri LankaTurkeyUAEUnited KingdomUSAIndiachevron-downSelect Languagelanguage-globeEnglishchevron-downAbout ZomatoWho We AreBlogWork With UsInvestor RelationsReport FraudZomaverseZomatoFeeding IndiaHyperpureZomalandFor RestaurantsPartner With UsApps For YouFor EnterprisesZomato For WorkLearn MorePrivacySecurityTermsSitemapSocial linksBy continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-2022 © Zomato™ Ltd. All rights reserved.]]></Value>
+            <Info><![CDATA[Ignored]]></Info>
+            <Matches>0</Matches>
+          </Property>
+          <Property>
+            <Name><![CDATA[visible]]></Name>
+            <Value><![CDATA[True]]></Value>
+            <Info><![CDATA[Ignored]]></Info>
+            <Matches>0</Matches>
+          </Property>
+          <Property>
+            <Name><![CDATA[acc_name]]></Name>
+            <Value><![CDATA[]]></Value>
+            <Info><![CDATA[Ignored]]></Info>
+            <Matches>0</Matches>
+          </Property>
+        </SIDOptionalProperties>
+      </SmartIdentificationInfo>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>Browser</Type>
+            <Name><![CDATA[Zomato]]></Name>
+          </Object>
+          <Object>
+            <Type>Page</Type>
+            <Name><![CDATA[Beautiful Rooftop Restaurants]]></Name>
+          </Object>
+          <Object>
+            <Type>WebElement</Type>
+            <Name><![CDATA[location-filldown-trianglecurr]]></Name>
+          </Object>
+        </Path>
+        <OperationData><![CDATA[<P><span class="text">The smart identification mechanism was invoked.</span></P><P><SPAN class=text>Reason: object not found.</SPAN></P>           <SPAN class=text><b>Original description:</b></SPAN><br>micclass=WebElement<br>innertext=location-filldown-trianglecurrent-locationDetect current locationUsing GPSplusAdd addressRecent LocationstimeGurudwara Colony, Nigdi, Pimpri-ChinchwadtimeSudhama Nagar, BengaluruSearchVedikachevron-downProfileNotificationsBookmarksReviewsNetworkFind friendsSettingsLog outNavigationHome/Pune/Collections/Beautiful Rooftop Restaurants/Beautiful Rooftop RestaurantsGood vibes and even better views19 PlacesplusSave CollectionlinkcrownFeaturedTTF - The Tenth Floor4.2star-fillDINING-star-fillDELIVERYFinger Food, Chinese, Pizza, Italian, North Indian, DessertsBaner, PunecrownFeaturedSKYE - Rooftop by Eternia4.3star-fillDINING-star-fillDELIVERYAmerican, Chinese, North Indian, Italian, Mughlai, Oriental, Continental, DessertsSenapati Bapat Road, PunecrownFeaturedFML - Food Music Love4.3star-fillDINING3.3star-fillDELIVERYNorth Indian, Chinese, Fast Food, SichuanKalyani Nagar, PunePaasha - JW Marriott Pune4.8star-fillDINING4.3star-fillDELIVERYNorth Indian, Kebab, DessertsJW Marriott Pune, Senapati Bapat Road, PuneMarine Drive3.9star-fillDINING3.6star-fillDELIVERYContinental, AsianHinjawadi, PuneChar Bar Lounge and Restaurant LLP4.0star-fillDINING4.0star-fillDELIVERYFinger Food, North Indian, Chinese, ContinentalWakad, PuneTexas Tower4.2star-fillDINING4.1star-fillDELIVERYContinental, North Indian, Italian, Finger Food, Desserts, BeveragesKharadi, PuneSpice Factory4.1star-fillDINING3.9star-fillDELIVERYNorth Indian, ChineseWhite Square, Hinjawadi, PuneIce N Fire Sky Lounge4.3star-fillDINING4.0star-fillDELIVERYFinger Food, Continental, North IndianBaner, PuneBacharika- Rooftop Bar And Kitchen4.5star-fillDINING4.2star-fillDELIVERYChinese, North Indian, Continental, Middle Eastern, European, SichuanKothrud, PuneBeto's4.0star-fillDINING3.5star-fillDELIVERYNorth Indian, Continental, Italian, Chinese, Seafood, SichuanNIBM Road, PuneEvviva Sky Lounge - Crowne Plaza Pune City Centre4.2star-fillDINING-star-fillDELIVERYAsian, Mughlai, ContinentalCrowne Plaza Pune City Centre, Bund Garden Road, PuneAtmosphere 64.1star-fillDINING3.8star-fillDELIVERYNorth Indian, Continental, ChineseSky Max Mall, Viman Nagar, PuneThe Mafia4.1star-fillDINING-star-fillDELIVERYNorth Indian, Continental, ChineseViman Nagar, PuneTalli4.2star-fillDINING4.0star-fillDELIVERYNorth Indian, Fast Food, Pizza, Pasta, Chinese, SichuanBaner, PunePenthouze4.0star-fillDINING-star-fillDELIVERYContinental, Italian, Finger FoodMundhwa, Pune360 Degree - The Rooftop Restaurant & Bar3.6star-fillDINING-star-fillDELIVERYChinese, Mughlai, Fast Food, North Indian, Beverages, Desserts, SichuanBhosale-Shinde Arcade, JM Road, PuneThe Green Roof4.1star-fillDINING3.9star-fillDELIVERYChinese, North Indian, Italian, SandwichSinhgad Road, PuneExotica4.4star-fillDINING4.2star-fillDELIVERYNorth Indian, Mughlai, Maharashtrian, Chinese, Desserts, Beverages, Oriental, SichuanPanchshil Tech Park, Yerawada, PuneMore CollectionsNewly Opened22 Placesright-triangleTrending This Week30 Placesright-triangleBest of Pune97 Placesright-triangleMost Romantic Restaurants28 Placesright-triangleRooftops30 Placesright-triangleBest Bars & Pubs29 Placesright-triangleWork Friendly Places!30 Placesright-triangleSunday Brunches28 Placesright-triangleVeggie Friendly30 Placesright-triangleBest Pizza Places In Town27 Placesright-triangleSweet Tooth27 Placesright-triangleLegendary Outlets30 Placesright-triangleGreat Breakfasts30 Placesright-trianglePan-Asian Delicacies30 Placesright-triangleSuper Seafood30 Placesright-triangleLive Sports Screenings37 Placesright-triangleKickass Burgers19 Placesright-trianglePocket Friendly29 Placesright-triangleGreat Coffee27 Placesright-triangleTraditional Thali30 Placesright-triangleExplore options near mePopular cuisines near mechevron-downPopular restaurant types near mechevron-downTop Restaurant Chainschevron-downCities We Deliver Tochevron-downSelect CountryIndiaAustraliaBrazilCanadaChileCzech RepublicIndonesiaIrelandItalyLebanonMalaysiaNew ZealandPhilippinesPolandPortugalQatarSingaporeSlovakiaSouth AfricaSri LankaTurkeyUAEUnited KingdomUSAIndiachevron-downSelect Languagelanguage-globeEnglishchevron-downAbout ZomatoWho We AreBlogWork With UsInvestor RelationsReport FraudZomaverseZomatoFeeding IndiaHyperpureZomalandFor RestaurantsPartner With UsApps For YouFor EnterprisesZomato For WorkLearn MorePrivacySecurityTermsSitemapSocial linksBy continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-2022 © Zomato™ Ltd. All rights reserved.<br>html tag=DIV<br>class=sc-laTMn gITREa<br><P><FONT face=Verdana size=2><SPAN class=text><B>Smart Identification Alternative Description: </B></SPAN></FONT></P><FONT face=Verdana size=2><u>Base filter properties (763 objects found)&nbsp;</FONT></u><br>
+micclass=WebElement<br>html tag=DIV<br><br><FONT face=Verdana size=2><u>Optional filter properties</FONT></u><br>
+html id=<SPAN class=passed> (Used</SPAN>, 736 matches)</SPAN><br>class=sc-laTMn gITREa<SPAN class=passed> (Used</SPAN>, 1 matches)</SPAN><br>innertext=location-filldown-trianglecurrent-locationDetect current locationUsing GPSplusAdd addressRecent LocationstimeGurudwara Colony, Nigdi, Pimpri-ChinchwadtimeSudhama Nagar, BengaluruSearchVedikachevron-downProfileNotificationsBookmarksReviewsNetworkFind friendsSettingsLog outNavigationHome/Pune/Collections/Beautiful Rooftop Restaurants/Beautiful Rooftop RestaurantsGood vibes and even better views19 PlacesplusSave CollectionlinkcrownFeaturedTTF - The Tenth Floor4.2star-fillDINING-star-fillDELIVERYFinger Food, Chinese, Pizza, Italian, North Indian, DessertsBaner, PunecrownFeaturedSKYE - Rooftop by Eternia4.3star-fillDINING-star-fillDELIVERYAmerican, Chinese, North Indian, Italian, Mughlai, Oriental, Continental, DessertsSenapati Bapat Road, PunecrownFeaturedFML - Food Music Love4.3star-fillDINING3.3star-fillDELIVERYNorth Indian, Chinese, Fast Food, SichuanKalyani Nagar, PunePaasha - JW Marriott Pune4.8star-fillDINING4.3star-fillDELIVERYNorth Indian, Kebab, DessertsJW Marriott Pune, Senapati Bapat Road, PuneMarine Drive3.9star-fillDINING3.6star-fillDELIVERYContinental, AsianHinjawadi, PuneChar Bar Lounge and Restaurant LLP4.0star-fillDINING4.0star-fillDELIVERYFinger Food, North Indian, Chinese, ContinentalWakad, PuneTexas Tower4.2star-fillDINING4.1star-fillDELIVERYContinental, North Indian, Italian, Finger Food, Desserts, BeveragesKharadi, PuneSpice Factory4.1star-fillDINING3.9star-fillDELIVERYNorth Indian, ChineseWhite Square, Hinjawadi, PuneIce N Fire Sky Lounge4.3star-fillDINING4.0star-fillDELIVERYFinger Food, Continental, North IndianBaner, PuneBacharika- Rooftop Bar And Kitchen4.5star-fillDINING4.2star-fillDELIVERYChinese, North Indian, Continental, Middle Eastern, European, SichuanKothrud, PuneBeto's4.0star-fillDINING3.5star-fillDELIVERYNorth Indian, Continental, Italian, Chinese, Seafood, SichuanNIBM Road, PuneEvviva Sky Lounge - Crowne Plaza Pune City Centre4.2star-fillDINING-star-fillDELIVERYAsian, Mughlai, ContinentalCrowne Plaza Pune City Centre, Bund Garden Road, PuneAtmosphere 64.1star-fillDINING3.8star-fillDELIVERYNorth Indian, Continental, ChineseSky Max Mall, Viman Nagar, PuneThe Mafia4.1star-fillDINING-star-fillDELIVERYNorth Indian, Continental, ChineseViman Nagar, PuneTalli4.2star-fillDINING4.0star-fillDELIVERYNorth Indian, Fast Food, Pizza, Pasta, Chinese, SichuanBaner, PunePenthouze4.0star-fillDINING-star-fillDELIVERYContinental, Italian, Finger FoodMundhwa, Pune360 Degree - The Rooftop Restaurant & Bar3.6star-fillDINING-star-fillDELIVERYChinese, Mughlai, Fast Food, North Indian, Beverages, Desserts, SichuanBhosale-Shinde Arcade, JM Road, PuneThe Green Roof4.1star-fillDINING3.9star-fillDELIVERYChinese, North Indian, Italian, SandwichSinhgad Road, PuneExotica4.4star-fillDINING4.2star-fillDELIVERYNorth Indian, Mughlai, Maharashtrian, Chinese, Desserts, Beverages, Oriental, SichuanPanchshil Tech Park, Yerawada, PuneMore CollectionsNewly Opened22 Placesright-triangleTrending This Week30 Placesright-triangleBest of Pune97 Placesright-triangleMost Romantic Restaurants28 Placesright-triangleRooftops30 Placesright-triangleBest Bars & Pubs29 Placesright-triangleWork Friendly Places!30 Placesright-triangleSunday Brunches28 Placesright-triangleVeggie Friendly30 Placesright-triangleBest Pizza Places In Town27 Placesright-triangleSweet Tooth27 Placesright-triangleLegendary Outlets30 Placesright-triangleGreat Breakfasts30 Placesright-trianglePan-Asian Delicacies30 Placesright-triangleSuper Seafood30 Placesright-triangleLive Sports Screenings37 Placesright-triangleKickass Burgers19 Placesright-trianglePocket Friendly29 Placesright-triangleGreat Coffee27 Placesright-triangleTraditional Thali30 Placesright-triangleExplore options near mePopular cuisines near mechevron-downPopular restaurant types near mechevron-downTop Restaurant Chainschevron-downCities We Deliver Tochevron-downSelect CountryIndiaAustraliaBrazilCanadaChileCzech RepublicIndonesiaIrelandItalyLebanonMalaysiaNew ZealandPhilippinesPolandPortugalQatarSingaporeSlovakiaSouth AfricaSri LankaTurkeyUAEUnited KingdomUSAIndiachevron-downSelect Languagelanguage-globeEnglishchevron-downAbout ZomatoWho We AreBlogWork With UsInvestor RelationsReport FraudZomaverseZomatoFeeding IndiaHyperpureZomalandFor RestaurantsPartner With UsApps For YouFor EnterprisesZomato For WorkLearn MorePrivacySecurityTermsSitemapSocial linksBy continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-2022 © Zomato™ Ltd. All rights reserved.<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>visible=-1<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>acc_name=<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>]]></OperationData>
+        <Properties>
+          <Property>
+            <Name><![CDATA[innertext]]></Name>
+            <Value><![CDATA[location-filldown-trianglecurrent-locationDetect current locationUsing GPSplusAdd addressRecent LocationstimeGurudwara Colony, Nigdi, Pimpri-ChinchwadtimeSudhama Nagar, BengaluruSearchVedikachevron-downProfileNotificationsBookmarksReviewsNetworkFind friendsSettingsLog outNavigationHome/Pune/Collections/Beautiful Rooftop Restaurants/Beautiful Rooftop RestaurantsGood vibes and even better views19 PlacesplusSave CollectionlinkcrownFeaturedTTF - The Tenth Floor4.2star-fillDINING-star-fillDELIVERYFinger Food, Chinese, Pizza, Italian, North Indian, DessertsBaner, PunecrownFeaturedSKYE - Rooftop by Eternia4.3star-fillDINING-star-fillDELIVERYAmerican, Chinese, North Indian, Italian, Mughlai, Oriental, Continental, DessertsSenapati Bapat Road, PunecrownFeaturedFML - Food Music Love4.3star-fillDINING3.3star-fillDELIVERYNorth Indian, Chinese, Fast Food, SichuanKalyani Nagar, PunePaasha - JW Marriott Pune4.8star-fillDINING4.3star-fillDELIVERYNorth Indian, Kebab, DessertsJW Marriott Pune, Senapati Bapat Road, PuneMarine Drive3.9star-fillDINING3.6star-fillDELIVERYContinental, AsianHinjawadi, PuneChar Bar Lounge and Restaurant LLP4.0star-fillDINING4.0star-fillDELIVERYFinger Food, North Indian, Chinese, ContinentalWakad, PuneTexas Tower4.2star-fillDINING4.1star-fillDELIVERYContinental, North Indian, Italian, Finger Food, Desserts, BeveragesKharadi, PuneSpice Factory4.1star-fillDINING3.9star-fillDELIVERYNorth Indian, ChineseWhite Square, Hinjawadi, PuneIce N Fire Sky Lounge4.3star-fillDINING4.0star-fillDELIVERYFinger Food, Continental, North IndianBaner, PuneBacharika- Rooftop Bar And Kitchen4.5star-fillDINING4.2star-fillDELIVERYChinese, North Indian, Continental, Middle Eastern, European, SichuanKothrud, PuneBeto's4.0star-fillDINING3.5star-fillDELIVERYNorth Indian, Continental, Italian, Chinese, Seafood, SichuanNIBM Road, PuneEvviva Sky Lounge - Crowne Plaza Pune City Centre4.2star-fillDINING-star-fillDELIVERYAsian, Mughlai, ContinentalCrowne Plaza Pune City Centre, Bund Garden Road, PuneAtmosphere 64.1star-fillDINING3.8star-fillDELIVERYNorth Indian, Continental, ChineseSky Max Mall, Viman Nagar, PuneThe Mafia4.1star-fillDINING-star-fillDELIVERYNorth Indian, Continental, ChineseViman Nagar, PuneTalli4.2star-fillDINING4.0star-fillDELIVERYNorth Indian, Fast Food, Pizza, Pasta, Chinese, SichuanBaner, PunePenthouze4.0star-fillDINING-star-fillDELIVERYContinental, Italian, Finger FoodMundhwa, Pune360 Degree - The Rooftop Restaurant &amp; Bar3.6star-fillDINING-star-fillDELIVERYChinese, Mughlai, Fast Food, North Indian, Beverages, Desserts, SichuanBhosale-Shinde Arcade, JM Road, PuneThe Green Roof4.1star-fillDINING3.9star-fillDELIVERYChinese, North Indian, Italian, SandwichSinhgad Road, PuneExotica4.4star-fillDINING4.2star-fillDELIVERYNorth Indian, Mughlai, Maharashtrian, Chinese, Desserts, Beverages, Oriental, SichuanPanchshil Tech Park, Yerawada, PuneMore CollectionsNewly Opened22 Placesright-triangleTrending This Week30 Placesright-triangleBest of Pune97 Placesright-triangleMost Romantic Restaurants28 Placesright-triangleRooftops30 Placesright-triangleBest Bars &amp; Pubs29 Placesright-triangleWork Friendly Places!30 Placesright-triangleSunday Brunches28 Placesright-triangleVeggie Friendly30 Placesright-triangleBest Pizza Places In Town27 Placesright-triangleSweet Tooth27 Placesright-triangleLegendary Outlets30 Placesright-triangleGreat Breakfasts30 Placesright-trianglePan-Asian Delicacies30 Placesright-triangleSuper Seafood30 Placesright-triangleLive Sports Screenings37 Placesright-triangleKickass Burgers19 Placesright-trianglePocket Friendly29 Placesright-triangleGreat Coffee27 Placesright-triangleTraditional Thali30 Placesright-triangleExplore options near mePopular cuisines near mechevron-downPopular restaurant types near mechevron-downTop Restaurant Chainschevron-downCities We Deliver Tochevron-downSelect CountryIndiaAustraliaBrazilCanadaChileCzech RepublicIndonesiaIrelandItalyLebanonMalaysiaNew ZealandPhilippinesPolandPortugalQatarSingaporeSlovakiaSouth AfricaSri LankaTurkeyUAEUnited KingdomUSAIndiachevron-downSelect Languagelanguage-globeEnglishchevron-downAbout ZomatoWho We AreBlogWork With UsInvestor RelationsReport FraudZomaverseZomatoFeeding IndiaHyperpureZomalandFor RestaurantsPartner With UsApps For YouFor EnterprisesZomato For WorkLearn MorePrivacySecurityTermsSitemapSocial linksBy continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-2022 © Zomato™ Ltd. All rights reserved.]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[html tag]]></Name>
+            <Value><![CDATA[DIV]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[class]]></Name>
+            <Value><![CDATA[sc-laTMn gITREa]]></Value>
+          </Property>
+        </Properties>
+      </TestObject>
+      <IconKey>d75efd8bbece43f282fba4f64dd066cd</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <DeviceInfo />
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Beautiful Rooftop Restaurants</Name>
+    <Description>Page</Description>
+    <StartTime>2022-07-05 15:22:08</StartTime>
+    <Duration>30</Duration>
+    <Result>Warning</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>Browser</Type>
+            <Name><![CDATA[Zomato]]></Name>
+          </Object>
+          <Object>
+            <Type>Page</Type>
+            <Name><![CDATA[Beautiful Rooftop Restaurants]]></Name>
+          </Object>
+        </Path>
+        <OperationData><![CDATA[Page]]></OperationData>
+      </TestObject>
+      <IconKey>8204df8335bc4152ac9612ca34c716f1</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Zomato</Name>
+    <Description>&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;span style="text-align : left; font-size : 12px; "&gt;Local Browser&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</Description>
+    <StartTime>2022-07-05 15:22:01</StartTime>
+    <Duration>37</Duration>
+    <Result>Warning</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>Browser</Type>
+            <Name><![CDATA[Zomato]]></Name>
+          </Object>
+        </Path>
+        <OperationData><![CDATA[<table><tr><td><span style="text-align : left; font-size : 12px; ">Local Browser</span></td></tr></table>]]></OperationData>
+      </TestObject>
+      <IconKey>586c8d72b3464de9bd1fdcc0001fe32f</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Action2</Name>
+    <Description />
+    <StartTime>2022-07-05 15:21:51</StartTime>
+    <Duration>47</Duration>
+    <Result>Warning</Result>
+    <InputParameters />
+    <Extension>
+      <IconKey>45e189a884f14a33973d81d868d92520</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Driver</Name>
+    <ToolName>Micro Focus UFT One</ToolName>
+    <ToolVersion>2021</ToolVersion>
+    <ToolVersionStringLiteral>2021</ToolVersionStringLiteral>
+    <Description />
+    <StartTime>2022-07-05 15:21:46</StartTime>
+    <Duration>52</Duration>
+    <Result>Warning</Result>
+    <InputParameters />
+    <Extension>
+      <IconKey>c100df50ee144e2c941a4f1eb09724be</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <Environment>
+      <Timezone>+05:30:00</Timezone>
+      <Locale>English (United States)</Locale>
+      <User>ALCHEMYCLOUD\user246</User>
+      <CpuInfo>Intel(R) Xeon(R) CPU E5-2673 v4 @ 2.30GHz</CpuInfo>
+      <NumberOfCores>4</NumberOfCores>
+      <TotalMemory>16383</TotalMemory>
+      <HostName>alchemycloud.co.in\UFT-19</HostName>
+      <OSInfo>Windows 10 1703 (x64)</OSInfo>
+    </Environment>
+    <TestedApplications />
+    <Links>
+      <Link type="DataTable" reference="Default.xlsx" displayname="Default Data Table" />
+    </Links>
+  </Data>
+</ReportNode>
+<GeneralInfo>
+    <ResultName>Res65</ResultName>
+    <RunStartTime>2022-07-05 15:21:46</RunStartTime>
+    <Timezone>+05:30:00</Timezone>
+    <OrchestrationToolName>Micro Focus UFT One</OrchestrationToolName>
+    <OrchestrationToolVersion>2021</OrchestrationToolVersion>
+    <OrchestrationToolVersionStringLiteral>2021</OrchestrationToolVersionStringLiteral>
+  </GeneralInfo>
+</Results>

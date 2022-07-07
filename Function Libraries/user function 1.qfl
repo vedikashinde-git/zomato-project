@@ -1,0 +1,251 @@
+﻿'TC_0011
+Function search11()
+Systemutil.Run"Chrome.exe"
+Browser(browserObject).Navigate(DataTable.Value("URL","Test Data"))
+Browser("Zomato").Page("Zomato").WebEdit("Search for restaurant,").Set "cuisine"
+Browser("Zomato").Page("Zomato").WebElement("Raaga Multi Cuisine Restaurant").Click
+resultString11=Browser("Zomato").Page("Raaga Multi Cuisine Restaurant").WebElement("Raaga Multi Cuisine Restaurant, Nigdi, Pune_2").GetROProperty("text")
+
+searchString11= DataTable.Value("Expected_Result","Test Data")
+If  strcomp(resultString11,searchString11)=0 Then
+	Reporter.ReportEvent micPass,"search","pass."
+Else
+   Reporter.ReportEvent micFail,"search","fail"
+End If
+If  strcomp(resultString11,searchString11 )=0 Then
+       search11="pass."
+Else
+  search11="fail"
+   End  If
+  Systemutil.CloseProcessByName"chrome.exe"
+
+End Function
+'TC_0012
+'
+Function search12()
+Systemutil.Run"Chrome.exe"
+Browser(browserObject).Navigate(DataTable.Value("URL","Test Data"))
+
+Browser("Zomato").Page("Zomato").WebEdit("Search for restaurant,").Set "paneer masala"
+Browser("Zomato").Page("Zomato").WebElement("Paneer Masala - Delivery").Click
+
+resultString12=Browser("Zomato").Page("Delivery Restaurants in").WebElement("Delivery Restaurants in Gurudwara Colony, Nigdi, Pimpri-Chinchwad - Zomato_2").GetROProperty("text")
+
+searchString12= DataTable.Value("Expected_Result","Test Data")
+If  strcomp(resultString12,searchString12)=0 Then
+	Reporter.ReportEvent micPass,"search","pass."
+Else
+   Reporter.ReportEvent micFail,"search","fail"
+End If
+If  strcomp(resultString12,searchString12 )=0 Then
+       search12="pass."
+Else
+  search12="fail"
+   End  If
+  Systemutil.CloseProcessByName"chrome.exe"
+End Function
+'TC_0013
+'
+Function search13()
+Systemutil.Run"Chrome.exe"
+Browser(browserObject).Navigate(DataTable.Value("URL","Test Data"))
+
+Browser("Zomato").Page("Zomato").WebEdit("Search for restaurant,").Set "beautiful rooftop restaurant"
+Browser("Zomato").Page("Zomato").WebElement("Beautiful Rooftop Restaurants").Click
+'Browser("Zomato").Page("Beautiful Rooftop Restaurants").WebElement("xpath:=//DIV[@id='root']/DIV[1]/DIV[3]/DIV[1]/DIV[1]/SECTION[1]/SECTION[1]").highlight
+'Browser("Zomato").Page("Beautiful Rooftop Restaurants").WebElement("19 Places").Check CheckPoint("19 Places")
+Browser("Zomato").Page("Beautiful Rooftop Restaurants").WebElement("xpath:=//DIV[@id='root']/DIV[1]/DIV[3]/DIV[1]").highlight
+
+'Browser("Zomato").Page("Beautiful Rooftop Restaurants").Link("crownFeaturedbookmark-add").Click
+resultString13=Browser("Zomato").Page("Beautiful Rooftop Restaurants").WebElement("19 Places").GetROProperty("text")
+
+searchString13= DataTable.Value("Expected_Result","Test Data")
+If  strcomp(resultString13,searchString13)=0 Then
+	Reporter.ReportEvent micPass,"search","pass."
+Else
+   Reporter.ReportEvent micFail,"search","fail"
+End If
+If  strcomp(resultString13,searchString13 )=0 Then
+       search13="pass."
+Else
+  search13="fail"
+   End  If
+  Systemutil.CloseProcessByName"chrome.exe"
+End Function
+
+'TC_0014
+Function search14()
+Systemutil.Run"Chrome.exe"
+Browser(browserObject).Navigate(DataTable.Value("URL","Test Data"))
+
+Browser("Zomato").Page("Zomato").WebElement("location-filldown-trianglecurr_2").highlight
+Browser("Zomato").Page("Zomato").WebEdit("Search for restaurant,").Set
+Browser("Zomato").Page("Zomato").WebElement("View all Delivery outlets").Click
+Browser("Zomato").Page("Dominos Delivery: Order").Image("Restaurant Card").Click
+
+'Browser("Zomato").Page("Domino's Pizza, Ravet").Check CheckPoint("Domino's Pizza, Ravet order online - Zomato"
+resultString14=Browser("Zomato").Page("Domino's Pizza, Ravet").WebElement("2.4star-fill49Dining Reviews3.").GetROProperty("text")
+
+searchString14= DataTable.Value("Expected_Result","Test Data")
+
+If  strcomp(resultString14,searchString14)=0 Then
+	Reporter.ReportEvent micPass,"search","pass."
+Else
+   Reporter.ReportEvent micFail,"search","fail"
+End If
+If  strcomp(resultString14,searchString14 )=0 Then
+       search14="pass."
+Else
+  search14="fail"
+   End  If
+  Systemutil.CloseProcessByName"chrome.exe"
+
+End Function
+
+'TC__0015
+Function search15()
+Systemutil.Run"Chrome.exe"
+Browser(browserObject).Navigate(DataTable.Value("URL","Test Data"))
+
+Browser("Zomato").Page("Zomato").WebEdit("Search for restaurant,").Set "Restaurants"
+Browser("Zomato").Page("Zomato").WebElement("Restaurant Special - Dine-out").Click
+'Browser("Zomato").Page("Best Dining Restaurants").Output CheckPoint("Best Dining Restaurants near you in Gurudwara Colony, Nigdi, Pimpri-Chinchwad - Zomato")
+resultString15=Browser("Zomato").Page("Best Dining Restaurants").WebElement("Sorry, no results foundTry").GetROProperty("text")
+
+searchString15= DataTable.Value("Expected_Result","Test Data")
+
+If  strcomp(resultString15,searchString15)=0 Then
+	Reporter.ReportEvent micPass,"search","pass."
+Else
+   Reporter.ReportEvent micFail,"search","fail"
+End If
+If  strcomp(resultString15,searchString15 )=0 Then
+       search15="pass."
+Else
+  search15="fail"
+   End  If
+  Systemutil.CloseProcessByName"chrome.exe"
+End Function
+
+'TC__0016
+
+Function search16()
+Systemutil.Run"Chrome.exe"
+Browser(browserObject).Navigate(DataTable.Value("URL","Test Data"))
+Browser("Zomato").Page("Zomato").WebEdit("Search for restaurant,").Set "cuisine"
+Browser("Movie Tickets, Plays,").Page("Zomato").WebElement("xpath:=//DIV[7]/DIV[2]/DIV[1]/P[1]").Click
+Browser("Movie Tickets, Plays,").Page("Tamanna Multi Cuisine").Link("xpath:=//DIV[@role='tab']/H2/A[normalize-space()='Order Online']").Click
+'resultString16=Browser("Movie Tickets, Plays,").Page("Tamanna Multi Cuisine_2").WebElement("xpath=//DIV[@id='root']/DIV[1]/MAIN[1]/DIV[1]/SECTION[4]/SECTION[1]/SECTION[2]/SECTION[1]/SECTION[1]/LABEL[1]").GetROPerty("text")
+
+
+'resultString16=Browser("Zomato").Page("Tamanna Multi Cuisine_2").WebElement("veg only").GetROProperty("text")
+resultString16=Browser("Movie Tickets, Plays,").Page("Tamanna Multi Cuisine_2").WebElement("veg only_5").GetROProperty("text")
+'//DIV[@id="root"]/DIV[1]/MAIN[1]/DIV[1]/SECTION[4]/SECTION[1]/SECTION[2]/SECTION[1]/SECTION[1]/LABEL[1]
+
+searchString16= DataTable.Value("Expected_Result","Test Data")
+
+
+If  strcomp(resultString16,searchString16)=0 Then
+	Reporter.ReportEvent micPass,"search","pass."
+Else
+   Reporter.ReportEvent micFail,"search","fail"
+End If
+If  strcomp(resultString16,searchString16 )=0 Then
+       search16="pass."
+Else
+  search16="fail"
+   End  If
+  Systemutil.CloseProcessByName"chrome.exe"
+
+End Function
+'TC__0017
+
+Function search17()
+Systemutil.Run"Chrome.exe"
+Browser(browserObject).Navigate(DataTable.Value("URL","Test Data"))
+Browser("Movie Tickets, Plays,").Page("Zomato").WebEdit("Search for restaurant,").Set "Cafe's"
+Browser("Movie Tickets, Plays,").Page("Zomato").WebElement("xpath:=//DIV/DIV/P[normalize-space()='Cafe - Delivery']").Click
+'Browser(browserObject).Page(pageObject).Check CheckPoint("Cafe's")
+resultString17=Browser("Movie Tickets, Plays,").Page("Zomato").WebElement("xpath:= //DIV[7]/H1[1]").GetROProperty("text")
+
+searchString17= DataTable.Value("Expected_Result","Test Data")
+If  strcomp(resultString17,searchString17)=0 Then
+	Reporter.ReportEvent micPass,"search","pass."
+Else
+   Reporter.ReportEvent micFail,"search","fail"
+End If
+
+If  strcomp(resultString17,searchString17 )=0 Then
+	search17="pass."
+Else
+       search17="fail"
+  End  If
+
+
+End function 
+'TC__0018
+Function search18()	
+Systemutil.Run"Chrome.exe"
+Browser(browserObject).Navigate(DataTable.Value("URL","Test Data"))
+
+Browser("Zomato").Page("Zomato").WebEdit("Search for restaurant,").Set "Burger"
+Browser("Movie Tickets, Plays,").Page("Zomato").WebElement("Burger - Delivery").Click
+
+'Browser("Zomato").Page("Zomato").WebElement("Burger - Delivery").Click
+
+resultString18=Browser("Movie Tickets, Plays,").Page("Burger Delivery Restaurants").WebElement("Burger Delivery Restaurants_3").GetROProperty("text")
+'//DIV[7]/H1[1]
+searchString18= DataTable.Value("Expected_Result","Test Data")
+If  strcomp(resultString18,searchString18)=0 Then
+	Reporter.ReportEvent micPass,"search","pass."
+Else
+   Reporter.ReportEvent micFail,"search","fail"
+End If
+If  strcomp(resultString18,searchString18 )=0 Then
+       search18="pass."
+Else
+  search18="fail"
+   End  If
+  Systemutil.CloseProcessByName"chrome.exe"
+End Function
+'TC__0019
+Function search19()
+	Systemutil.Run"Chrome.exe"
+Browser(browserObject).Navigate(DataTable.Value("URL","Test Data"))
+Browser("Zomato").Page("Zomato").WebEdit("Search for restaurant,").Set "hybhfvgcxgvbnj"
+resultString19=Browser("Movie Tickets, Plays,").Page("Zomato").WebElement("Oops!_2").GetROProperty("text")
+'//DIV/DIV/DIV/DIV/DIV/DIV/P[normalize-space()="Oops!"]
+searchString19= DataTable.Value("Expected_Result","Test Data")
+If  strcomp(resultString19,searchString19)=0 Then
+	Reporter.ReportEvent micPass,"search","pass."
+Else
+   Reporter.ReportEvent micFail,"search","fail"
+End If
+If  strcomp(resultString19,searchString19 )=0 Then
+       search19="pass."
+Else
+  search19="fail"
+   End  If
+  Systemutil.CloseProcessByName"chrome.exe"
+End Function
+'TC__0020
+Function search20()
+Systemutil.Run"Chrome.exe"
+Browser(browserObject).Navigate(DataTable.Value("URL","Test Data"))
+Browser("Zomato").Page("Zomato").WebEdit("Search for restaurant,").Set"Restaurants"
+Browser("Zomato").Page("Zomato").WebElement("Sangeeta Restaurant &_4").Click
+resultString20=Browser("Zomato").Page("Sangeeta Restaurant &").WebElement("Sangeeta Restaurant &").GetROProperty("text")
+searchString20= DataTable.Value("Expected_Result","Test Data")
+If  strcomp(resultString20,searchString20)=0 Then
+	Reporter.ReportEvent micPass,"search","pass."
+Else
+   Reporter.ReportEvent micFail,"search","fail"
+End If
+If  strcomp(resultString20,searchString20 )=0 Then
+       search20="pass."
+Else
+  search20="fail"
+   End  If
+  Systemutil.CloseProcessByName"chrome.exe"
+End Function
+

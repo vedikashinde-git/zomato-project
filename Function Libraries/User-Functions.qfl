@@ -1,0 +1,257 @@
+﻿'TC_001
+
+Function search()
+Systemutil.Run"Chrome.exe"
+Browser(browserObject).Navigate(DataTable.Value("URL","Test Data"))
+wait(2)
+Browser(browserObject).Page(pageObject).WebEdit(editObject).Set "pizza"
+Browser(browserObject).Page(pageObject).WebElement(sEleObject).Click
+Browser(browserObject).Page(pageObject).WebElement( pEleObject).Click
+resultString=Browser(browserObject).Page(pageObject).WebElement(eleObject).GetROProperty("text")
+
+searchString= DataTable.Value("Expected_Result","Test Data")
+
+If  strcomp(resultString,searchString )=0 Then
+	Reporter.ReportEvent micPass,"search","pass."
+Else
+   Reporter.ReportEvent micFail,"search","fail"
+End If
+If  strcomp(resultString,searchString )=0 Then
+	search="pass."
+Else
+     search="fail"
+   End  If
+   Systemutil.CloseProcessByName"chrome.exe"
+End Function
+
+
+'TC_002
+Function search1()
+Systemutil.Run"Chrome.exe"
+Browser(browserObject).Navigate(DataTable.Value("URL","Test Data"))
+wait(2)
+Browser(browserObject).Page(pageObject).WebEdit(edit1Object).Set "hybhfvgcxgvbnj"
+'('Browser(browserObject).Page(pageObject).WebElement(webE1Object).Click)
+resultString1=Browser(browserObject).Page(pageObject).WebElement(webEleObject).GetROProperty("text")
+searchString1= DataTable.Value("Expected_Result","Test Data")
+If strcomp(resultString1,searchString1 )=0 Then
+	Reporter.ReportEvent micPass,"search","pass"
+Else
+      Reporter.ReportEvent micFail,"search","fail."
+End If
+
+If  strcomp(resultString,searchString )=0 Then
+	search1="pass."
+Else
+   search1="fail"
+   End  If
+    Systemutil.CloseProcessByName"chrome.exe"
+End Function
+
+
+'TC_003
+Function search2()
+Systemutil.Run"Chrome.exe"
+Browser(browserObject).Navigate(DataTable.Value("URL","Test Data"))
+
+Browser(browserObject).Page(pageObject).WebEdit(resObject).Set "restaurants"
+Browser(browserObject).Page(pageObject).WebElement(resSeObject).Click
+Browser(browserObject).Page(pageObject).WebElement(sangObject).Highlight
+resultString2=Browser(browserObject).Page(pageObject).WebElement(sangObject).GetROProperty("text")
+'resultString2=Browser(browserObject).Page(pageObject).Check CheckPoint("Sangeeta Restaurant & Bar, Akurdi, Pune_2")
+
+searchString2= DataTable.Value("Expected_Result","Test Data")
+
+If Instr(resultString2,searchString2 )=0 Then
+	Reporter.ReportEvent micPass,"search","pass"
+Else
+      Reporter.ReportEvent micFail,"search","fail."
+End If
+If  strcomp(resultString2,searchString2 )=0 Then
+	search2="pass."
+Else
+   search2="fail"
+   End  If
+    Systemutil.CloseProcessByName"chrome.exe"
+End Function
+
+
+'TC_004
+function search3()
+Systemutil.Run"Chrome.exe"
+Browser(browserObject).Navigate(DataTable.Value("URL","Test Data"))
+wait(2)
+Browser(browserObject).Page(pageObject).WebEdit(cuisObject).Set "cuisine"
+Browser(browserObject).Page(pageObject).WebElement(cuiRagaObject).Click
+Browser(browserObject).Page(pageObject).WebElement(openObject).Highlight
+'Browser(browserObject)).Page(pageObject).Check CheckPoint("Raaga Multi Cuisine Restaurant, Nigdi, Pune_2")
+resultString3=Browser(browserObject).Page(pageObject).WebElement(openObject).GetROProperty("text")
+searchString3= DataTable.Value("Expected_Result","Test Data")
+If strcomp(resultString3,searchString3 )=0 Then
+	Reporter.ReportEvent micPass,"search","pass"
+Else
+      Reporter.ReportEvent micFail,"search","fail."
+End If
+If  strcomp(resultString,searchString )=0 Then
+	search3="pass."
+Else
+   search3="fail"
+   End  If
+    Systemutil.CloseProcessByName"chrome.exe"
+End Function
+'TC__005
+Function search4()
+Systemutil.Run"Chrome.exe"
+Browser(browserObject).Navigate(DataTable.Value("URL","Test Data"))
+wait(2)
+Browser(browserObject).Page(pageObject).WebEdit(panirObject).Set "paneer masala"
+Browser(browserObject).Page(pageObject).WebElement(paniEObject).Click
+'Browser("Zomato").Page("Delivery Restaurants in").Check CheckPoint("Delivery Restaurants in Gurudwara Colony, Nigdi, Pimpri-Chinchwad - Zomato_2")
+Browser(browserObject).Page(pageObject).WebElement(deliveryObject).Highlight
+resultString4=Browser(browserObject).Page(pageObject).WebElement(deliveryObject).GetROProperty("text")
+ searchString4= DataTable.Value("Expected_Result","Test Data")
+If strcomp(resultString4,searchString4 )=0 Then
+	Reporter.ReportEvent micPass,"search","pass"
+Else
+      Reporter.ReportEvent micFail,"search","fail."
+End If
+If  strcomp(resultString,searchString )=0 Then
+	search4="pass."
+Else
+   search4="fail"
+   End  If
+    Systemutil.CloseProcessByName"chrome.exe"
+End Function
+'TC__006
+Function search5()
+Systemutil.Run"Chrome.exe"
+Browser(browserObject).Navigate(DataTable.Value("URL","Test Data"))
+wait(2)
+Browser(browserObject).Page(pageObject).WebEdit(roofSObject).Set "Beautiful Rooftop Restaurants"
+Browser(browserObject).Page(pageObject).WebElement(roofResObject).Click
+'Browser("Zomato").Page("Beautiful Rooftop Restaurants").WebElement("xpath:=//DIV[@id='root']/DIV[1]/DIV[3]/DIV[1]/DIV[1]/SECTION[1]/SECTION[1]").highlight
+'Browser("Zomato").Page("Beautiful Rooftop Restaurants").WebElement("19 Places").Check CheckPoint("19 Places")
+Browser(browserObject).Page(pageObject).WebElement(pl19Object).Highlight
+resultString5=Browser(browserObject).Page(pageObject).WebElement(pl19Object).GetROProperty("text")
+Browser(browserObject).Page(pageObject).WebElement(roofHObject).highlight
+searchString5= DataTable.Value("Expected_Result","Test Data")
+If   strcomp(resultString5,searchString5 )=0 Then
+	Reporter.ReportEvent micPass,"search","pass"
+Else
+      Reporter.ReportEvent micFail, "search","fail."
+End If
+If  strcomp(resultString,searchString )=0 Then
+	search5="pass."
+Else
+   search5="fail"
+   End  If
+    Systemutil.CloseProcessByName"chrome.exe"
+End Function
+'TC__007
+Function search6()
+Systemutil.Run"Chrome.exe"
+Browser(browserObject).Navigate(DataTable.Value("URL","Test Data"))
+wait(2)
+Browser(browserObject).Page(pageObject).WebElement(highLObject).highlight
+Browser(browserObject).Page(pageObject).WebEdit(domiSObject).Set "domino's"
+Browser(browserObject).Page(pageObject).WebElement( viewObject).Click
+'Browser(browserObject).Page(pageObject).Image(imageObject).Click
+'Browser(browserObject).Page(pageObject).WebElement(imageObject).Click
+Browser(browserObject).Page(pageObject).WebElement(image1Object).Click
+
+resultString6=Browser(browserObject).Page(pageObject).WebElement(rateObject).GetROProperty("text")
+searchString6= DataTable.Value("Expected_Result","Test Data")
+'Browser("Zomato").Page("Domino's Pizza, Ravet").Check CheckPoint("Domino's Pizza, Ravet order online - Zomato")
+'resultString6=Browser(browserObject).Page(pageObject).WebElement(rateObject).GetROProperty("text")
+
+If   strcomp(resultString6,searchString6 )=0 Then
+	Reporter.ReportEvent micPass,"search","pass"
+Else
+      Reporter.ReportEvent micFail,"search","fail."
+End If
+
+If  strcomp(resultString,searchString )=0 Then
+	search6="pass."
+Else
+   search6="fail"
+   End  If
+    Systemutil.CloseProcessByName"chrome.exe"
+End Function
+'TC__008
+Function search7()
+Systemutil.Run"Chrome.exe"
+Browser(browserObject).Navigate(DataTable.Value("URL","Test Data"))
+
+Browser(browserObject).Page(pageObject).WebEdit(se7Object).Set "Restaurants"
+Browser(browserObject).Page(pageObject).WebElement(dineObject).Click
+'Browser(browserObject).Page("Best Dining Restaurants").Output CheckPoint("Best Dining Restaurants near you in Gurudwara Colony, Nigdi, Pimpri-Chinchwad - Zomato")
+Browser(browserObject).Page(pageObject).WebElement(noResObject).Highlight
+resultString7=Browser(browserObject).Page(pageObject).WebElement(noResObject).GetROProperty("text")
+searchString7= DataTable.Value("Expected_Result","Test Data")
+If   strcomp(resultString7,searchString7 )=0 Then
+	Reporter.ReportEvent micPass,"search","pass"
+Else
+      Reporter.ReportEvent micFail,"search","fail."
+End If
+If  strcomp(resultString,searchString )=0 Then
+	search7="pass."
+Else
+   search7="fail"
+   End  If
+    Systemutil.CloseProcessByName"chrome.exe"
+End Function
+
+'TC__009
+function search8()
+Systemutil.Run"Chrome.exe"
+Browser(browserObject).Navigate(DataTable.Value("URL","Test Data"))
+
+Browser(browserObject).Page(pageObject).WebEdit(cuiEdObject).Set "cuisine"
+Browser(browserObject).Page(pageObject).WebElement(Ele8Object).Click
+Browser(browserObject).Page(pageObject).Link(link8Object).Click
+'Browser("Zomato").Page("Tamanna Multi Cuisine_2").WebElement("veg only").Check CheckPoint("veg only")
+Browser(browserObject).Page(pageObject).WebElement(vegObject).Highlight
+resultString8=Browser(browserObject).Page(pageObject).WebElement(vegObject).GetROProperty("text")
+searchString8= DataTable.Value("Expected_Result","Test Data")
+If   strcomp(resultString8,searchString8)=0 Then
+	Reporter.ReportEvent micPass,"search","pass"
+Else
+      Reporter.ReportEvent micFail,"search","fail."
+End If
+If  strcomp(resultString,searchString )=0 Then
+	search8="pass."
+Else
+   search8="fail"
+   End  If
+    Systemutil.CloseProcessByName"chrome.exe"
+End Function
+'TC__0010
+Function search9()
+Systemutil.Run"Chrome.exe"
+Browser(browserObject).Navigate(DataTable.Value("URL","Test Data"))
+Browser(browserObject).Page(pageObject).WebEdit(cafeObject).Set "Cafe's"
+Browser(browserObject).Page(pageObject).WebElement(cafeCuObject).Click
+'Browser(browserObject).Page(pageObject).Check CheckPoint("Cafe's")
+resultString9=Browser(browserObject).Page(pageObject).WebElement( Caf9Object).GetROProperty("text")
+searchString9= DataTable.Value("Expected_Result","Test Data")
+If   strcomp(resultString9,searchString9 )=0 Then
+	Reporter.ReportEvent micPass,"search","pass"
+Else
+      Reporter.ReportEvent micFail,"search","fail."
+End If
+If  strcomp(resultString,searchString )=0 Then
+	search9="pass."
+Else
+   search9="fail"
+   End  If
+    Systemutil.CloseProcessByName"chrome.exe"
+
+End Function
+
+
+
+
+
+
+
+

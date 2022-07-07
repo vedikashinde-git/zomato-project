@@ -1,0 +1,164 @@
+﻿
+'Dim searchString, resultString ,searchString1, resultString1, searchString2, resultString2,  searchString5, resultString5,searchString7, resultString7,searchString4, resultString4,searchString3, resultString3, searchString6, resultString6, searchString8, resultString8, searchString9, resultString9
+Dim searchString11, resultString11,  searchString12, resultString12, searchString13, resultString13,  searchString14, resultString14,searchString15, resultString15,  searchString16, resultString16, searchString17, resultString17,  searchString18, resultString18, searchString19, resultString19, searchString20, resultString20
+
+'searchString11="Closed for dining"
+'searchString12="Delivery"
+'searchString13="19 Places"
+'searchString14="Delivery Reviews"
+'searchString15="Sorry, no results foundTry again with fewer filters"
+'searchString16="veg only"
+'searchString17="Cafe Delivery Restaurants in Gurudwara Colony, Nigdi, Pimpri-Chinchwad"
+'searchString18="Pizza Best Dining Restaurants near you in Gurudwara Colony, Nigdi, Pimpri-Chinchwad"'
+'searchString19="Oops!We could not understand what you mean, try rephrasing the query."
+'searchString20="Sangeeta Restaurant &amp; Bar"
+
+'--------------------------------------------------------------------------------------
+
+'searchString="Pizza Best Dining Restaurants near you in Gurudwara Colony, Nigdi, Pimpri-Chinchwad"'
+'searchString1="Oops!We could not understand what you mean, try rephrasing the query."
+'searchString2="Sangeeta Restaurant & Bar"
+'searchString3="Closed for dining"
+'searchString4="Delivery"
+'searchString5="19 Places"
+'searchString6="Delivery Reviews"
+'searchString7="Sorry, no results foundTry again with fewer filters"
+'searchString8="veg only"
+'searchString9="Cafe Delivery Restaurants in Gurudwara Colony, Nigdi, Pimpri-Chinchwad"
+
+
+'----------------------------------------search-------------------------------------
+
+Set browserObject= Description.create
+browserObject("creationtime").value="0"
+
+Set  pageObject= Description.create
+pageObject("micclass").value="page"
+
+Set  editObject= Description.create
+editObject("xpath").value="//DIV[2]/DIV[2]/DIV[1]/DIV[3]/INPUT[1]"
+
+Set  sEleObject= Description.create
+sEleObject("xpath").value="//DIV/DIV/DIV/DIV[normalize-space()='Search']/DIV[1]"
+
+Set  pEleObject= Description.create
+pEleObject("xpath").value="//DIV[@id='root']/DIV[1]/DIV[3]/DIV[2]/DIV[2]/DIV[1]/DIV[3]/DIV[2]/DIV[2]/DIV[2]"
+
+Set  eleObject= Description.create
+eleObject("xpath").value="//DIV[7]/H1[1]"
+'______________________search1______________
+Set  edit1Object= Description.create
+edit1Object("xpath").value="//DIV[2]/DIV[2]/DIV[1]/DIV[3]/INPUT[1]"
+
+Set  webE1Object= Description.create
+webE1Object("xpath").value="//DIV[@id='root']/DIV[1]/DIV[3]/DIV[2]/DIV[2]/DIV[1]/DIV[3]/DIV[1]/I[1]/svg[@role=img']"
+
+Set  webEleObject= Description.create
+webEleObject("xpath").value="//DIV[2]/DIV[2]/DIV[1]/DIV[3]/DIV[2]"
+
+'__________________________search2___________________________
+
+Set  resObject= Description.create
+resObject("xpath").value="//DIV[2]/DIV[2]/DIV[1]/DIV[3]/INPUT[1]"
+
+Set  resSeObject= Description.create
+resSeObject("xpath").value="//DIV[@id='root']/DIV[1]/DIV[3]/DIV[2]/DIV[2]/DIV[1]/DIV[3]/DIV[2]/DIV[1]/DIV[2]/DIV[1]/P[1]"
+
+Set  sangObject= Description.create
+sangObject("xpath").value="//DIV[@id='root']/DIV[1]/MAIN[1]/DIV[1]/SECTION[3]/SECTION[1]/SECTION[1]/DIV[1]/DIV[1]/DIV[1]/H1[1]"
+
+'__________________________search3________________________________
+
+Set  cuisObject= Description.create
+cuisObject("xpath").value="//DIV[2]/DIV[2]/DIV[1]/DIV[3]/INPUT[1]"
+
+Set  cuiRagaObject= Description.create
+cuiRagaObject("xpath").value="//DIV[3]/DIV[2]/DIV[1]/P[1]"
+
+Set  openObject= Description.create
+openObject("xpath").value="//DIV[@id='root']/DIV[1]/MAIN[1]/DIV[1]/SECTION[3]/SECTION[1]/SECTION[1]/DIV[1]/DIV[1]/SECTION[2]/SECTION[1]/SPAN[1]"
+
+'_________________________search4_________________________
+
+Set  panirObject= Description.create
+panirObject("xpath").value="//DIV[2]/DIV[2]/DIV[1]/DIV[3]/INPUT[1]"
+
+Set  paniEObject= Description.create
+paniEObject("xpath").value="//DIV[@id='root']/DIV[1]/DIV[3]/DIV[2]/DIV[2]/DIV[1]/DIV[3]/DIV[2]/DIV[1]/DIV[2]/P[1]"
+
+Set  deliveryObject= Description.create
+deliveryObject("xpath").value="//DIV/DIV/DIV/SECTION/SECTION[@role='tablist']/DIV[@role='tab' and normalize-space()='Delivery']"
+'____________________________search5_____________________
+
+Set  roofSObject= Description.create
+roofSObject("xpath").value="//DIV[2]/DIV[2]/DIV[1]/DIV[3]/INPUT[1]"
+
+Set  roofResObject= Description.create
+roofResObject("xpath").value="//DIV[@id='root']/DIV[1]/DIV[3]/DIV[2]/DIV[2]/DIV[1]/DIV[3]/DIV[2]/DIV[1]/DIV[2]/P[1]"
+
+Set  pl19Object= Description.create
+pl19Object("xpath").value="//DIV[@id='root']/DIV[1]/DIV[3]/DIV[1]/DIV[1]/SECTION[1]/SECTION[2]/P[1]"
+
+Set  roofHObject= Description.create
+roofHObject("xpath").value="//DIV[@id='root']/DIV[1]/DIV[3]/DIV[1]"
+'________________________search6___________________
+
+Set  highLObject= Description.create
+highLObject("xpath").value="//DIV[@id='root']/DIV[1]/DIV[3]/DIV[2]/DIV[2]/DIV[1]"
+
+Set  domiSObject= Description.create
+domiSObject("xpath").value="//DIV[2]/DIV[2]/DIV[1]/DIV[3]/INPUT[1]"
+
+Set  viewObject= Description.create
+viewObject("xpath").value="//DIV[@id='root']/DIV[1]/DIV[3]/DIV[2]/DIV[2]/DIV[1]/DIV[3]/DIV[2]/DIV[4]/DIV[1]/BUTTON[@role='button'][1]/SPAN[1]/SPAN[1]"
+
+Set  imageObject= Description.create
+imageObject("xpath").value="//DIV[1]/DIV[1]/DIV[1]/A[2]/DIV[1]/H4[1]"
+
+Set image1Object= Description.Create
+image1Object("xpath").value="//DIV[@id='root']/DIV[1]/DIV[8]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/A[2]/DIV[1]/H4[1]"
+
+Set  rateObject= Description.create
+rateObject("xpath").value="//DIV/DIV[normalize-space()='Delivery Reviews']"
+
+'_______________________________________search7_________________________________________________________________________________
+
+Set  se7Object= Description.create
+se7Object("xpath").value="//DIV[2]/DIV[2]/DIV[1]/DIV[3]/INPUT[1]"
+
+Set  dineObject= Description.create
+dineObject("xpath").value="//DIV[2]/DIV[2]/DIV[1]/DIV[3]/DIV[2]/DIV[9]"
+
+Set  noResObject= Description.create
+noResObject("xpath").value="//DIV[@id='root']/DIV[1]/DIV[7]"
+
+'____________________________search8___________________________
+
+Set  cuiEdObject= Description.create
+cuiEdObject("xpath").value="//DIV[2]/DIV[2]/DIV[1]/DIV[3]/INPUT[1]"
+
+Set  Ele8Object= Description.create
+Ele8Object("xpath").value="//DIV[7]/DIV[2]/DIV[1]/P[1]"
+
+Set  link8Object= Description.create
+link8Object("xpath").value="//DIV[@role='tab']/H2/A[normalize-space()='Order Online']"
+
+Set  vegObject= Description.create
+vegObject("xpath").value="//DIV[@id='root']/DIV[1]/MAIN[1]/DIV[1]/SECTION[4]/SECTION[1]/SECTION[2]/SECTION[1]/SECTION[1]/LABEL[1]"
+
+'___________________________search9_________________________
+
+Set  cafeObject= Description.create
+cafeObject("xpath").value="//DIV[2]/DIV[2]/DIV[1]/DIV[3]/INPUT[1]"
+
+Set  cafeCuObject= Description.create
+cafeCuObject("xpath").value="//DIV/DIV/P[normalize-space()='Cafe - Delivery']"
+
+Set  Caf9Object= Description.create
+caf9Object("xpath").value="//DIV[7]/H1[1]"
+
+
+
+
+
+
